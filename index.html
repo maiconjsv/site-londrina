@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <div id="headerbar" class="headerBarOn">
+            <div id="menuButton"><span class="material-symbols-outlined">menu</span></div>
+            <div id="logo">
+                <h2>O que fazer em Londrina?</h2>
+            </div>
+        </div>
+        <div id="descobrir">
+            <div id="descobrirButton">
+                Descobrir
+            </div>
+        </div>
+    </header>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" id="slide1">
+        <div class="slideText">
+            <div class="descobrirSlide">
+              <h1>Eventos</h1>
+              <div class="slideButton" id="slide1Button">Descobrir</div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide" id="slide2">
+      <div class="slideText">
+        <div class="descobrirSlide">
+          <h1>Ecoturismo</h1>
+          <div class="slideButton" id="slide2Button">Descobrir</div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" id="slide3">
+      <div class="slideText">
+        <div class="descobrirSlide">
+          <h1>Gastronomia</h1>
+          <div class="slideButton" id="slide3Button">Descobrir</div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" id="slide4">
+      <div class="slideText">
+        <div class="descobrirSlide">
+          <h1>Pra Familia</h1>
+          <div class="slideButton" id="slide4Button">Descobrir</div>
+        </div>
+      </div>
+    </div>
+        <div class="swiper-slide" id="slide5">
+      <div class="slideText">
+        <div class="descobrirSlide">
+          <h1>História e museus</h1>
+          <div class="slideButton" id="slide5Button">Descobrir</div>
+        </div>
+      </div>
+    </div>
+        <div class="swiper-slide" id="slide6">
+      <div class="slideText">
+        <div class="descobrirSlide">
+          <h1>Feiras</h1>
+          <div class="slideButton" id="slide6Button">Descobrir</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<main>
+  <div class="divContent" id="eventos">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, animi itaque reiciendis quisquam exercitationem error quos enim non autem architecto temporibus quam perspiciatis deleniti consectetur eveniet! Molestiae quos nam corrupti.</p>
+  </div>
+  <div class="divContent" id="ecoTurismo">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime, esse, asperiores nostrum unde labore, eos aliquid harum tenetur consectetur atque dolorem iusto vitae ad doloremque impedit molestiae dolores voluptatibus.</p>
+  </div>
+  <div class="divContent" id="">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dignissimos magnam aperiam nam possimus amet placeat minima maiores quae ad asperiores suscipit tempora animi expedita, non molestiae velit atque! Fugiat.</p>
+  </div>
+  <div class="divContent" id="gastronomia">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquid aut exercitationem fugiat totam libero non molestiae debitis? Ipsum, illo! Illo quaerat, vitae numquam porro eos quam assumenda at veniam!
+  </div>
+  <div class="divContent" id="familia">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda cum veritatis quis laudantium ducimus. Aperiam error sit quam voluptate similique labore omnis temporibus mollitia, neque tenetur eveniet, inventore nostrum?
+  </div>
+  <div class="divContent" id="historiaEmuseus">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur odit suscipit perspiciatis officiis nam facilis, repellendus, dignissimos culpa dolore ipsam similique vero eaque placeat magni fugiat aut ipsa. Provident, quis?
+  </div>
+  <div class="divContent" id="feiras">
+    Lorem ipsum dolor sit amaaaaaaaaaaaaaaaet consectetur adipisicing elit. Doloribus alias qui nobis fuga, aspernatur illo, dolores laboriosam, repellendus cum tenetur deserunt? Impedit deleniti nisi adipisci aut et minima delectus perspiciatis!
+  </div>
+</main>
+<footer> <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, eos voluptate quis nam fuga dolorem quam quibusdam alias perferendis dolor! Repellat et quaerat esse? Laudantium quaerat nesciunt deleniti ea ut.</small></footer>
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="src/index.js"></script>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+ 
+});
+</script>
+</html>

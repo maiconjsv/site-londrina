@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Lago_Igap%C3%B3_Londrina.jpg/960px-Lago_Igap%C3%B3_Londrina.jpg?20161029144533);
+    height: 100vh;    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerBarOn{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 14vh;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(39, 39, 39);
+    position: fixed;
+    transition: all ease 0.5s;
+    top: 0;
+}
+    .headerBarOn.headerBarOff{
+        top: -20vh;
+        transition: all ease 0.5s;
+    }
+#logo{
+    display: flex;
+    width: 31%;
+    margin: 6%;
+    color: rgb(39, 39, 39);
+}
+#menuButton{
+    margin: 10px;
+    font-size: 27px;
+}
+
+
+#descobrir{
+    position: absolute;
+    bottom: 78px;
+    align-self: center;
+    width: 30vw;
+    height: 5vh;
+    background-color: wheat;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(39, 39, 39);
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+}
+
+.swiper-button-next::after{
+        color: white;
+        text-shadow: black 4px 3px 3px;
+    }
+    .swiper-button-prev::after{
+        color: white;
+        text-shadow: black 4px 3px 3px;
+    }
+.swiper-slide{
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+.slideText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+   
+    .descobrirSlide{
+        align-self: flex-end;
+        align-self: flex-start;
+        margin-top: 30%;
+        color: white;
+        font-size: 20px;
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .descobrirSlide h1{
+            margin-top: 10px;
+            text-shadow: black 3px 3px 3px;
+        }
+        .slideButton{
+            margin-bottom: 50px;
+            width: 60%;
+            height: 7%;
+            background-color: rgba(245, 222, 179, 0.411);
+            color: rgb(19, 19, 19);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+
+#slide1{
+    background-image: url(../src/media/part.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#slide2{
+    background-image: url(../src/media/camping.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#slide3{
+    background-image: url(../src/media/culinaria.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#slide4{
+    background-image: url(../src/media/familia.jpg);
+    background-position: right;
+    background-size: cover;
+}
+#slide5{
+    background-image: url(../src/media/museu.jpg);
+    background-position: right;
+    background-size: cover;
+}
+#slide6{
+    background-image: url(../src/media/feira.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divContent{
+    width: 100%;
+}
+
+
+#feiras{
+    height: 100vh;
+}
