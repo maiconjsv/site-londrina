@@ -15,3 +15,11 @@ const coisasPraFazer1 = document.querySelector('.swiper')
     discovery.addEventListener('click', () =>{
         coisasPraFazer1.scrollIntoView({behavior: "smooth"})
     })
+
+//logica de link externo da seção Feiras
+document.querySelector('#img2').addEventListener('click', () =>{
+    window.open("https://feiraslondrina.com.br/fair", "_blank")
+})
+document.querySelector('#mapFeiras').addEventListener('click', () =>{
+    window.open("https://feiraslondrina.com.br/fair", "_blank")
+})
