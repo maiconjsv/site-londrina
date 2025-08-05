@@ -90,7 +90,11 @@
 
 <main>
   <div class="divContent" id="eventos">
-   
+    <h2>Próximos eventos até <br>o final do ano</h2>
+    <div id="lista-eventos">
+      <ul id="ulEvent">
+      </ul>
+    </div>
   </div>
   <div class="divContent" id="ecoTurismo">
    
@@ -121,11 +125,61 @@
 <footer> <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, eos voluptate quis nam fuga dolorem quam quibusdam alias perferendis dolor! Repellat et quaerat esse? Laudantium quaerat nesciunt deleniti ea ut.</small></footer>
 
 
-
-
-
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="src/index.js"></script>
+<script type="module">
+ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+ import { getFirestore, collection, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCIjEKrjRLlzxMDEs6kyguaWfIhAIO7OKs",
+  authDomain: "londrina-o-que-fazer.firebaseapp.com",
+  projectId: "londrina-o-que-fazer",
+  storageBucket: "londrina-o-que-fazer.firebasestorage.app",
+  messagingSenderId: "954487488195",
+  appId: "1:954487488195:web:609a82d73ba8bd50202c76"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+const ulEvent = document.getElementById('ulEvent');
+const hoje = new Date();
+
+// Função que converte "DD/MM/YYYY" para objeto Date
+function parseDataBrasileira(dataStr) {
+  const [dia, mes, ano] = dataStr.split('/');
+  return new Date(`${ano}-${mes}-${dia}`);
+}
+
+const eventosRef = collection(db, "eventos");
+const eventosQuery = query(eventosRef, orderBy("data"));
+
+onSnapshot(eventosQuery, (snapshot) => {
+  ulEvent.innerHTML = "";
+  let temEvento = false;
+
+  snapshot.forEach(doc => {
+    const dados = doc.data();
+    const dataEvento = parseDataBrasileira(dados.data);
+
+    if (dataEvento >= hoje) {
+      temEvento = true;
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="https://${dados.link}" target="_blank">
+        <strong>${dados.nome} </strong> – ${dados.data}
+     <span id="touch" class="material-symbols-outlined">touch_app</span></a>`;
+      ulEvent.appendChild(li);
+    }
+  });
+
+  if (!temEvento) {
+    eventosLista.innerHTML = "<li>Sem eventos futuros no momento.</li>";
+  }
+});
+
+</script>
+
 <script type="module">
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
@@ -152,4 +206,5 @@
  
 });
 </script>
+</body>
 </html>
