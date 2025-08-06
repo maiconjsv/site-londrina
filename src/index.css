@@ -181,33 +181,30 @@ main{
 }
 
 #eventos{
-    
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    
+    background-color: #f1f7ff;
 }
     #eventos h2{
         margin: 20px 0px 0px 9px;
-        align-self: flex-start;
+        align-self: center;
     }
 #lista-eventos{
-    width: 86%;
+    width: 90%;
     height: 70%;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(187, 186, 186);
-    margin-top: 30px;
-    box-shadow: rgba(0, 0, 0, 0.486) 4px 4px 2px ;
+    margin-top: 19px;
+    border:solid black 0.5px; ;
 }
     #ulEvent li{
         list-style-type: none;
@@ -217,7 +214,70 @@ main{
             color: rgb(12, 12, 12);
             
         }
+#expoLondrina{
+    background-color: #007d4b;
+}
 
+#expoTexts{
+    /*background-color: rgba(17, 105, 17, 0.788);*/
+    background-color: #007d4b;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-self: flex-end;
+    color: white;
+}
+    #expoTexts h2,h3, p{
+        margin: 7px 0px 0px 8px;
+        text-align: left;
+    }
+    #expoTexts img{
+        width: 100%;
+    }
+#iconsExpo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0px 20px 0px;
+}
+    .iconEx{
+        background-color: #015c37;
+        padding: 5px;
+        width: 34%;
+        text-align: center;
+        border-radius: 25px;
+        border: solid white 0.5px;
+    }
+#expoText2{
+    color: white;
+    width: 100%;
+    padding: 8px 0px 5px 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+    #saberMaisExpo{
+        background-color: #daedfe;
+        display: flex;
+        width: 40%;
+        height: 50px;
+        justify-self: flex-start;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: solid white 0.5px;
+        font-size: 17px;
+        color: #007d4b;
+        margin: 10px 0px 20px 9px;
+    }
+.hr {
+  width: 80%; height: 1px; 
+  background-color: #d1d1d1;
+  margin-top: 20px;
+}
 
 
 
