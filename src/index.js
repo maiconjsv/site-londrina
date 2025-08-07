@@ -15,6 +15,21 @@ const coisasPraFazer1 = document.querySelector('.swiper')
     discovery.addEventListener('click', () =>{
         coisasPraFazer1.scrollIntoView({behavior: "smooth"})
     })
+    //links do carrocel principal
+document.getElementById('slide1Button').addEventListener('click', () =>{
+    document.getElementById('eventos').scrollIntoView({behavior: "smooth"})
+})
+
+document.getElementById('slide6Button').addEventListener('click', () =>{
+    document.getElementById('feiras').scrollIntoView({behavior: "smooth"})
+})
+
+
+
+//lógica eventos
+document.getElementById('saberMaisExpo').addEventListener('click', () =>{
+    window.open("https://expolondrina.com.br/", "_blank")
+})
 
 //logica de link externo da seção Feiras
 document.querySelector('#img2').addEventListener('click', () =>{

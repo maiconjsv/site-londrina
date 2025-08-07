@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    
+    <style>@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
 <body>
     <header>
@@ -111,6 +111,7 @@
       <div id="expoText2">
         <p>O evento acontece a 6 décadas e é um espaço aberto para o público de todas as idades, contendo desde shows sertanejos marcantes até exposição de animais, tecnologia agricola, praça de alimentação com todo tipo de comida e oportunidade de negócios.</p>
         <div id="saberMaisExpo">Saber Mais</div>
+        <div class="location"><span class="material-symbols-outlined">location_on</span>PARQUE NEY BRAGA EVENTOS</div>
       </div>
     </div>
     <div class="hr"></div>
@@ -120,16 +121,40 @@
       <ul id="ulEvent">
       </ul>
     </div>
-    <div id="instagramDaCultura">
-      <p>Ou você pode acompanhar todos eventos locais pelo site Visite Londrina</p>
+    <div id="visiteLondrina">
+      <div id="vlt">
+        <p>Ou você pode acompanhar todos eventos locais pelo site Visite Londrina</p>
+        <span class="material-symbols-outlined" id="arrowLeft">arrow_downward</span>
+        <a href="https://visitelondrina.com.br/calendario/" target="_blank">visitelondrina.com.br/calendario/</a>
+      </div>
+      <img src="src/media/link-londrina-evento.png" alt="" id="visiteLodrinaLinkImg">
     </div>
   </div>
   <div class="divContent" id="ecoTurismo">
-   
+    <div class="hr"></div>
+    <div id="ecoturismoIntro">
+      <h1>Ecoturismo em Londrina</h1>
+      <p>Caminhadas, trilhas, pesca e camping?</p>
+      <img src="src/media/hikinh.jpg" alt="">
+    </div>
+
+    <div class="swiper swiper2">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" id="ecoS1">
+      <p>blalalalala</p>
+    </div>
+    <div class="swiper-slide" id="ecoS2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi illo sit dicta dignissimos consectetur odit quo unde? Numquam itaque ullam expedita ex recusandae, reprehenderit debitis amet similique omnis, labore doloribus.</p>
+    </div>
+</div>
+<div class="swiper-pagination swiper2-pagination"></div>
+<div class="swiper-scrollbar swiper2-scrollbar"></div>
+<div class="swiper-button-prev swiper2-prev"></div>
+<div class="swiper-button-next swiper2-next"></div>
   </div>
-  <div class="divContent" id="">
-   
-  </div>
+
   <div class="divContent" id="gastronomia">
    
   </div>
@@ -140,6 +165,7 @@
    
   </div>
   <div class="divContent" id="feiras">
+    <div class="hr"></div>
     <h1>Conheça as feiras</h1>
     <p id="pFeira1">Nada como se perder em um feira recheada de sensações e sabores</p>
     <img src="src/media/feira2.jpg" id="img1" alt="pessoas andando em uma feira">
@@ -212,26 +238,39 @@ onSnapshot(eventosQuery, (snapshot) => {
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
     const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
- 
+});
+
+const swiper2 = new Swiper('.swiper2',{
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '.swiper2-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper2-next',
+    prevEl: '.swiper2-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper2-scrollbar',
+  },
 });
 </script>
 </body>
