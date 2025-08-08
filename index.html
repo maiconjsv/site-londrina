@@ -44,14 +44,16 @@
         </div>
       </div>
     </div>
+<!--  att futuras  
     <div class="swiper-slide" id="slide3">
       <div class="slideText">
         <div class="descobrirSlide">
           <h1>Gastronomia</h1>
           <div class="slideButton" id="slide3Button">Descobrir</div>
         </div>
-      </div>
     </div>
+    </div>
+-->
     <div class="swiper-slide" id="slide4">
       <div class="slideText">
         <div class="descobrirSlide">
@@ -187,12 +189,27 @@
     <div class="swiper-button-next swiper2-next"></div>
   </div>
 
-  <div class="divContent" id="gastronomia">
+ <!-- implementação futura <div class="divContent" id="gastronomia">
    
+  </div> -->
+<div class="divContent" id="familia">
+  <div class="hr"></div>
+  <h1>Os melhores lugares para familia</h1>
+  <img src="https://iili.io/FsXa5iP.md.jpg" alt="FsXa5iP.md.jpg">
+  <div class="swiperCtn">
+    <div class="swiper swiper3"> <div class="swiper-wrapper">
+        <div class="swiper-slide" id="igp1"></div>
+        <div class="swiper-slide" id="igp2"></div>
+        <div class="swiper-slide" id="igp3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <h3>Lago Igapó</h3>
+    <p>Um local perfeito para passear tranquilamente, fazer piquenique</p>
   </div>
-  <div class="divContent" id="familia">
-   
-  </div>
+</div>
+  </div> 
   <div class="divContent" id="historiaEmuseus">
    
   </div>
@@ -308,6 +325,29 @@ const swiper2 = new Swiper('.swiper2',{
     disableOnInteraction: false, // Continua a rolagem mesmo após a interação do usuário
   },
 });
+const swiper3 = new Swiper('.swiper3',{
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '.swiper2-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper2-next',
+    prevEl: '.swiper2-prev',
+  },
+  slidesPerView: 1.5,
+  spaceBetween: 15,
+
+ /* scrollbar: {
+    el: '.swiper2-scrollbar',
+  }, */
+  autoplay: {
+    delay: 6000, // Troca de slide a cada 6.5 segundos
+    disableOnInteraction: false, // Continua a rolagem mesmo após a interação do usuário
+  },
+})
 </script>
 </body>
 </html>

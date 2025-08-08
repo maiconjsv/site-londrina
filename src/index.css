@@ -148,11 +148,11 @@ header{
     background-position: center;
     background-size: cover;
 }
-#slide3{
+/*#slide3{
     background-image: url(../src/media/culinaria.jpg);
     background-position: center;
     background-size: cover;
-}
+}*/
 #slide4{
     background-image: url(../src/media/familia.jpg);
     background-position: right;
@@ -501,3 +501,60 @@ margin-top: 46px;
         animation: clickEffect 1.8s infinite;
     }
     
+
+
+#familia{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+    #familia .hr{
+        align-self: center;
+    }
+    #familia h1{
+        margin: 8px ;
+    }
+    #familia img{
+        width: 70%;
+        align-self: flex-end;
+        margin: 10px 8px 20px 0px;
+    }
+    .swiperCtn{
+        width: 90%;
+        
+        border: solid rgba(0, 0, 0, 0.377) ;
+        border-radius: 10px;
+        align-self: center;
+    }
+
+.swiper3{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    
+}
+.swiperCtn .swiper-slide{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+#igp1{
+    background-image: url("https://live.staticflickr.com/865/40656400755_b40d0833ab_b.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#igp2{
+    background-image: url("https://as1.ftcdn.net/jpg/05/22/77/60/1000_F_522776067_C7l8uTlLuz4CbATfsBXMoize4MS6dtu4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#igp3{
+    background-image: url("https://live.staticflickr.com/800/41549290041_1a5f3dc05a_b.jpg");
+    background-position: center;
+    background-size: cover;
+}
