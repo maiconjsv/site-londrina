@@ -20,6 +20,10 @@ document.getElementById('slide1Button').addEventListener('click', () =>{
     document.getElementById('eventos').scrollIntoView({behavior: "smooth"})
 })
 
+document.getElementById('slide2').addEventListener('click', () =>{
+    document.getElementById('ecoTurismo').scrollIntoView({behavior: "smooth"})
+})
+
 document.getElementById('slide6Button').addEventListener('click', () =>{
     document.getElementById('feiras').scrollIntoView({behavior: "smooth"})
 })
@@ -29,6 +33,23 @@ document.getElementById('slide6Button').addEventListener('click', () =>{
 //lógica eventos
 document.getElementById('saberMaisExpo').addEventListener('click', () =>{
     window.open("https://expolondrina.com.br/", "_blank")
+})
+
+//lógica ecoturismo
+document.getElementById('palink').addEventListener('click', () =>{
+    window.open("https://turismo.sapopema.pr.gov.br/atracao/detalhe/30/pico-agudo-/", "_blank")
+})
+document.getElementById('apcLink').addEventListener('click', () =>{
+    window.open('https://codel.londrina.pr.gov.br/index.php/pontos-turisticos/rurais.html', "_blank")
+})
+document.getElementById('pmgLink').addEventListener('click', () =>{
+    window.open("https://www.iat.pr.gov.br/Pagina/Parque-Estadual-Mata-dos-Godoy-PEMG", "_blank")
+})
+document.getElementById('patLink').addEventListener('click', () =>{
+    window.open("https://portal.londrina.pr.gov.br/unidades-de-conservacao/parque-municipal-arthur-thomas", "_blank")
+})
+document.getElementById('ptjLink').addEventListener('click', () =>{
+    window.open("https://www.instagram.com/toca_do_jacare/", "_blank")
 })
 
 //logica de link externo da seção Feiras
