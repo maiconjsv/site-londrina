@@ -3,16 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>O que fazer em Londrina</title>
     <link rel="stylesheet" href="src/index.css">
+    <link rel="shortcut icon" href="src/media/favicon-32x32.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <style>@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
 <body>
-    <header>
+<!--  <div class="hb">
+    <h4>O que fazer em Londrina</h4>
+    <ul>
+      <li>Entrar em contato</li>
+      <li>Contribuir</li>
+      <li>Sobre Londrina</li>
+    </ul>
+  </div>
+-->
+    <header class="hIn">
+      <div class="bgTr"></div>
         <div id="headerbar" class="headerBarOn">
             <div id="menuButton"><span class="material-symbols-outlined">menu</span></div>
+            <div id="translate"><strong>PT-BR</strong>
+              <div class="translates">
+                <ul>
+                  <li>PT-BR</li>
+                  <div class="hr2"></div>
+                  <li>EN</li>
+                  <div class="hr2"></div>
+                  <li>ES</li>
+                  <div class="hr2"></div>
+                </ul>
+              </div>
+            </div>
             <div id="logo">
                 <h2>O que fazer em Londrina?</h2>
             </div>
@@ -205,13 +228,53 @@
       <div class="swiper-pagination"></div>
       <div class="swiper-scrollbar"></div>
     </div>
-    <h3>Lago Igapó</h3>
-    <p>Um local perfeito para passear tranquilamente, fazer piquenique</p>
+    <h3> <span class="material-symbols-outlined">location_on</span>Lago Igapó</h3>
+    <p>Um local perfeito para passear tranquilamente e fazer piquenique</p>
+  </div>
+    <div class="swiperCtn">
+    <div class="swiper swiper3"> <div class="swiper-wrapper">
+        <div class="swiper-slide" id="jb1"></div>
+        <div class="swiper-slide" id="jb2"></div>
+        <div class="swiper-slide" id="jb3"></div>
+        <div class="swiper-slide" id="jb4"></div>
+        <div class="swiper-slide" id="jb5"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <h3> <span class="material-symbols-outlined">location_on</span>Jardim Botânico</h3>
+    <p>Um local seguro e espaçoso repleto de natureza em volta</p>
   </div>
 </div>
-  </div> 
   <div class="divContent" id="historiaEmuseus">
-   
+    <div class="hr"></div>
+    <h1>Museus e cultura</h1>
+    <p>Explore a história de Londrina e mergulhe na cultura local</p>
+    <div class="museusLista">
+      <h3>Museu Histórico de Londrina</h3>
+      <img src="https://live.staticflickr.com/2634/4164406362_c9193ac5a0_b.jpg" alt="museu histórico de Londrina">
+      <small>Foto do museu histórico</small>
+      <article>
+        <p>
+          O Museu Histórico de Londrina Padre Carlos Weiss foi inaugurado no dia 18 de setembro de 1970, na antiga Faculdade de Filosofia, Ciências e Letras de Londrina. <br> A partir de 1974, o museu é anexado à UEL como órgão suplementar, estando vinculado ao Centro de Letras e Ciências Humanas da universidade.
+          Em 10 de dezembro de 1986 o museu passa a ocupar o prédio que outrora pertencia à segunda estação ferroviária de Londrina, cedido pela Prefeitura. <br> O edifício do hoje Museu Histórico apresenta linhas arquitetônicas caracteristicamente ecléticas.
+        </p>
+        <small>Fonte: Wikipédia</small>
+        <a href="https://maps.app.goo.gl/SjNmHdmjb6DTCw7j8" target="_blank">
+          <p><span class="material-symbols-outlined">location_on</span> R. Benjamin Constant, 900 - Centro, Londrina - PR, 86010-350</p>
+        </a>
+      </article>
+
+      <h3>Museu da Arte de Londrina</h3>
+      <img src="https://vault.pulsarimagens.com.br/file/thumb/04SR028.jpg" alt="museu da arte">
+      <small>Foto do Museu da Arte</small>
+      <article>
+        <p>O Museu de Arte de Londrina é um museu brasileiro no município de Londrina, no Paraná. <br> Foi criado pelo decreto nº 172 em 12 de maio de 1993, data em que foi inaugurado. A exposição de inauguração exibiu a escultura A Eterna Primavera, de Auguste Rodin, e também obras dos artistas Menotti Del Pichia e Vitor Brecheret[1]. <br>
+          O prédio que abriga o museu fica na região central de Londrina, na rua Sergipe, e é tombado pelo Patrimônio Histórico e Artístico. Foi projetado em 1952 pelo arquiteto João Batista Vilanova Artigas e era usado como terminal rodoviário da cidade até 1988, quando o terminal mudou de lugar.</p>
+          <small>fonte: Wikipédia</small>
+          <a href="https://maps.app.goo.gl/SXoSXvZgTHc4eyxTA"><p><span class="material-symbols-outlined">location_on</span>R. Sergipe, 640 - Centro, Londrina - PR, 86010-380</p></a>
+      </article>
+    </div> 
   </div>
   <div class="divContent" id="feiras">
     <div class="hr"></div>
@@ -225,7 +288,25 @@
     </div>
   </div>
 </main>
-<footer> <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, eos voluptate quis nam fuga dolorem quam quibusdam alias perferendis dolor! Repellat et quaerat esse? Laudantium quaerat nesciunt deleniti ea ut.</small></footer>
+<footer> 
+  <div id="logo">
+      <h2>O que fazer em Londrina?</h2>
+    </div>
+    <div class="listFooter">
+      <ul>
+        <a href="#">
+          <li>Termos de uso</li>
+        </a>
+        <a href="#">
+          <li>Cookies</li>
+        </a>
+      </ul>
+    </div>
+    <div class="oqfazeremLondrina">
+      <p>©oquefazeremlondrina.com.br</p>
+      <p>Desenvolvido por <a href="#" id="linkport"><strong>Maicon Vieira</strong></a></p>
+    </div>
+</footer>
 
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -337,14 +418,14 @@ const swiper3 = new Swiper('.swiper3',{
     nextEl: '.swiper2-next',
     prevEl: '.swiper2-prev',
   },
-  slidesPerView: 1.5,
+  slidesPerView: 1,
   spaceBetween: 15,
 
  /* scrollbar: {
     el: '.swiper2-scrollbar',
   }, */
   autoplay: {
-    delay: 6000, // Troca de slide a cada 6.5 segundos
+    delay: 1500, // Troca de slide a cada 6.5 segundos
     disableOnInteraction: false, // Continua a rolagem mesmo após a interação do usuário
   },
 })

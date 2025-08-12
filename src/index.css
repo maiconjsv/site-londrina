@@ -9,6 +9,7 @@
 body, html{
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 header{
@@ -21,6 +22,7 @@ header{
     display: flex;
     flex-direction: column;
 }
+
 
 .headerBarOn{
     display: flex;
@@ -49,8 +51,49 @@ header{
     margin: 10px;
     font-size: 27px;
 }
-
-
+.bgTr{
+    background-color: #00000048;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+    .bgTr.bgTrOn{
+        display: flex;
+    }
+#translate{
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(255, 255, 255) 4px 4px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+    .translates{
+        opacity: 0;
+        background-color: #ffffff70;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 7px;
+        text-shadow: none;
+        text-align: center;
+        transition: all ease 0.5s;
+    }
+        .translates.trOn{
+            opacity: 10;
+            transition: all ease 0.5s;
+        }
+        .translates ul{
+            list-style: none;
+        }
+    .hr2{
+        width: 80%; height: 1px; 
+        background-color: #5c5c5c;
+        margin: 5px 0px 5px 0px;
+        justify-self: center;
+    }
 #descobrir{
     position: absolute;
     bottom: 78px;
@@ -517,6 +560,7 @@ margin-top: 46px;
     }
     #familia h1{
         margin: 8px ;
+        color: #012c1b;
     }
     #familia img{
         width: 70%;
@@ -525,10 +569,12 @@ margin-top: 46px;
     }
     .swiperCtn{
         width: 90%;
-        
+        padding-top: 5px;
+        padding-bottom: 20px;
         border: solid rgba(0, 0, 0, 0.377) ;
         border-radius: 10px;
         align-self: center;
+        margin: 10px 0px 10px 0px;
     }
 
 .swiper3{
@@ -538,10 +584,14 @@ margin-top: 46px;
     
 }
 .swiperCtn .swiper-slide{
-    background-color: aqua;
     width: 100%;
     height: 100%;
     border-radius: 8px;
+}
+.swiperCtn h3{
+    align-items: center;
+    display: flex;
+    color: #012c1b;
 }
 #igp1{
     background-image: url("https://live.staticflickr.com/865/40656400755_b40d0833ab_b.jpg");
@@ -558,3 +608,78 @@ margin-top: 46px;
     background-position: center;
     background-size: cover;
 }
+#jb1{
+    background-image: url("https://live.staticflickr.com/698/31993248221_736b16fc1b_b.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#jb2{
+    background-image: url("https://thumbs.dreamstime.com/b/jardim-bot%C3%A2nico-112058427.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#jb3{
+    background-image: url("https://vault.pulsarimagens.com.br/file/thumb/33ER544.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#jb4{
+    background-image: url("https://vault.pulsarimagens.com.br/file/thumb/33ER601.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#jb5{
+    background-image: url("https://vault.pulsarimagens.com.br/file/thumb/33ER601.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#historiaEmuseus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 95%;
+}
+    .museusLista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+    }
+        .museusLista img{
+            width: 90%;
+        }
+        .museusLista article{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+            .museusLista article p{
+                text-align: left;
+            }   
+        .museusLista article small{
+            margin-left: 9px;
+        }    
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007d4b;
+    color: white;
+}
+    .listFooter ul{
+        list-style: none;
+        text-align: center;
+    }
+    .listFooter ul a{
+        color: white;
+    }
+    .oqfazeremLondrina a{
+        color: #f1f7ff;
+    }

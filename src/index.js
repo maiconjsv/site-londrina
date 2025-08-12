@@ -8,6 +8,18 @@ const headerBar = document.querySelector('.headerBarOn')
             headerBar.classList.remove('headerBarOff')
         }
     })
+//interações do header
+const translateIcon = document.getElementById('translate')
+const tis =  document.querySelector('.translates')
+const bgTr = document.querySelector('.bgTr')
+    translateIcon.addEventListener('click', () =>{
+        tis.classList.add('trOn')
+        bgTr.classList.add('bgTrOn')
+    })
+   bgTr.addEventListener('click', () =>{
+        tis.classList.toggle('trOn')
+        bgTr.classList.toggle('bgTrOn')
+   })
 
 //Links internos
 const discovery = document.querySelector('#descobrirButton')
