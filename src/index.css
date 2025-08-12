@@ -12,6 +12,43 @@ body, html{
     position: relative;
 }
 
+.hb{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 20;
+    right: -800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all ease 1.5s;
+}
+    .hb.hbOn{
+        right: 0;
+        transition: all ease 1.5s;
+    }
+    .hb-top{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .hb ul{
+        list-style: none;
+        color: #131212;
+        margin-top: 20%;
+        text-align: center;
+        padding: 10px;
+    }
+        .hb ul li{
+            padding: 10px;
+            
+        }
+
+
 header{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Lago_Igap%C3%B3_Londrina.jpg/960px-Lago_Igap%C3%B3_Londrina.jpg?20161029144533);
     height: 100vh;    
@@ -84,9 +121,6 @@ header{
         .translates.trOn{
             opacity: 10;
             transition: all ease 0.5s;
-        }
-        .translates ul{
-            list-style: none;
         }
     .hr2{
         width: 80%; height: 1px; 

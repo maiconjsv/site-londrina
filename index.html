@@ -11,33 +11,35 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');</style>
 </head>
 <body>
-<!--  <div class="hb">
-    <h4>O que fazer em Londrina</h4>
+ <div class="hb">
+    <div class="hb-top">
+      <h4>O que fazer <br>em Londrina</h4>
+      <span class="material-symbols-outlined" id="closeBar">close</span>
+    </div>
     <ul>
-      <li>Entrar em contato</li>
-      <li>Contribuir</li>
-      <li>Sobre Londrina</li>
+      <li id="entrarEmContato">Entrar em contato</li>
+      <li id="contribuir">Contribuir</li>
+      <li id="sobre-londrina">Sobre Londrina</li>
     </ul>
   </div>
--->
+
     <header class="hIn">
       <div class="bgTr"></div>
         <div id="headerbar" class="headerBarOn">
             <div id="menuButton"><span class="material-symbols-outlined">menu</span></div>
-            <div id="translate"><strong>PT-BR</strong>
+            <div id="translate"><p id="showIdio">PT-BR</p>
               <div class="translates">
-                <ul>
-                  <li>PT-BR</li>
+                  <div id="ptBr">PT-BR</div>
                   <div class="hr2"></div>
-                  <li>EN</li>
+                  <div id="en">EN</div>
                   <div class="hr2"></div>
-                  <li>ES</li>
+                  <div id="es">ES</div>
                   <div class="hr2"></div>
                 </ul>
               </div>
             </div>
             <div id="logo">
-                <h2>O que fazer em Londrina?</h2>
+                <h2 id="h2HeaderLogo">O que fazer em Londrina?</h2>
             </div>
         </div>
         <div id="descobrir">
@@ -54,7 +56,7 @@
     <div class="swiper-slide" id="slide1">
         <div class="slideText">
             <div class="descobrirSlide">
-              <h1>Eventos</h1>
+              <h1 id="h1EventosHeader">Eventos</h1>
               <div class="slideButton" id="slide1Button">Descobrir</div>
             </div>
         </div>
@@ -62,7 +64,7 @@
     <div class="swiper-slide" id="slide2">
       <div class="slideText">
         <div class="descobrirSlide">
-          <h1>Ecoturismo</h1>
+          <h1 id="h1EcoturismoHeader">Ecoturismo</h1>
           <div class="slideButton" id="slide2Button">Descobrir</div>
         </div>
       </div>
@@ -80,7 +82,7 @@
     <div class="swiper-slide" id="slide4">
       <div class="slideText">
         <div class="descobrirSlide">
-          <h1>Pra Familia</h1>
+          <h1 id="h1PraFamiliaHeader">Pra Familia</h1>
           <div class="slideButton" id="slide4Button">Descobrir</div>
         </div>
       </div>
@@ -88,7 +90,7 @@
         <div class="swiper-slide" id="slide5">
       <div class="slideText">
         <div class="descobrirSlide">
-          <h1>História e museus</h1>
+          <h1 id="h1HistoriaeMuseusHeader">História e museus</h1>
           <div class="slideButton" id="slide5Button">Descobrir</div>
         </div>
       </div>
@@ -96,7 +98,7 @@
         <div class="swiper-slide" id="slide6">
       <div class="slideText">
         <div class="descobrirSlide">
-          <h1>Feiras</h1>
+          <h1 id="h1FeirasHeader">Feiras</h1>
           <div class="slideButton" id="slide6Button">Descobrir</div>
         </div>
       </div>
@@ -124,31 +126,31 @@
       <div id="expoTexts">
         <img src="https://f.i.uol.com.br/fotografia/2024/08/18/172395235466c16ce24312d_1723952354_3x2_md.jpg" alt="">
         <h2>ExpoLondrina</h2>
-        <p>Um dos maiores eventos agropecuários da América Latina</p>
+        <p id="p01">Um dos maiores eventos agropecuários da América Latina</p>
         <div id="iconsExpo">
-          <div class="iconEx">Gastronomia</div>
-          <div class="iconEx">Shows</div>
-          <div class="iconEx">Negócios</div>
-          <div class="iconEx">Exposições</div>
+          <div class="iconEx" id="iconEx1">Gastronomia</div>
+          <div class="iconEx" id="iconEx2">Shows</div>
+          <div class="iconEx" id="iconEx3">Negócios</div>
+          <div class="iconEx" id="iconEx4">Exposições</div>
         </div>
       </div>
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/mYwZRHgnjI0?si=uZwu9lLw0vA6rEMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div id="expoText2">
-        <p>O evento acontece a 6 décadas e é um espaço aberto para o público de todas as idades, contendo desde shows sertanejos marcantes até exposição de animais, tecnologia agricola, praça de alimentação com todo tipo de comida e oportunidade de negócios.</p>
+        <p id="p02">O evento acontece a 6 décadas e é um espaço aberto para o público de todas as idades, contendo desde shows sertanejos marcantes até exposição de animais, tecnologia agricola, praça de alimentação com todo tipo de comida e oportunidade de negócios.</p>
         <div id="saberMaisExpo">Saber Mais</div>
         <div class="location"><span class="material-symbols-outlined">location_on</span>PARQUE NEY BRAGA EVENTOS</div>
       </div>
     </div>
     <div class="hr"></div>
-    <h2>Mais eventos marcados</h2>
-    <p>Clique no que preferir para saber mais</p>
+    <h2 id="maisEventos">Mais eventos marcados</h2>
+    <p id="p03">Clique no que preferir para saber mais</p>
     <div id="lista-eventos">
       <ul id="ulEvent">
       </ul>
     </div>
     <div id="visiteLondrina">
       <div id="vlt">
-        <p>Ou você pode acompanhar todos eventos locais pelo site Visite Londrina</p>
+        <p id="p04">Ou você pode acompanhar todos eventos locais pelo site Visite Londrina</p>
         <span class="material-symbols-outlined" id="arrowLeft">arrow_downward</span>
         <a href="https://visitelondrina.com.br/calendario/" target="_blank">visitelondrina.com.br/calendario/</a>
       </div>
@@ -158,8 +160,8 @@
   <div class="divContent" id="ecoTurismo">
         <div class="hr"></div>
         <div id="ecoturismoIntro">
-          <h1>Ecoturismo em Londrina</h1>
-          <p>Caminhadas, trilhas, pesca e camping?</p>
+          <h1 id="h1Ecoturismo">Ecoturismo em Londrina</h1>
+          <p id="p05">Caminhadas, trilhas, pesca e camping?</p>
         <img src="src/media/hikinh.jpg" alt="">
       </div>
 
@@ -169,7 +171,7 @@
           <div class="ecoC" id="ecoC1">
             <img src="src/media/pico-agudo.jpg" id="piA" alt="imagem do pico agudo">
             <h4>Pico Agudo</h4>
-            <p>O ponto mais alto do Paraná, localizado a 135km de Londrina</p>
+            <p id="p06">O ponto mais alto do Paraná, localizado a 135km de Londrina</p>
             <div id="palink" class="linksEcoC">Saber mais</div>
           </div>
         </div>
@@ -177,31 +179,31 @@
           <div class="ecoC" id="ecoC2">
             <img src="src/media/salto-apucarana.jpg" alt="">
             <h4>Salto do Apucaraninha</h4>
-            <p>Uma enorme cachoeira de 116 metros de altura que se encontra a 76km de Londrina</p>
+            <p id="p07">Uma enorme cachoeira de 116 metros de altura que se encontra a 76km de Londrina</p>
             <div id="apcLink" class="linksEcoC">Saber mais</div>
           </div>
         </div>
         <div class="swiper-slide" id="ecoS3">
           <div class="ecoC" id="ecoC3">
             <img src="src/media/godoy.jpg" alt="parque godoy">
-            <h4>Parque mata dos Godoy</h4>
-            <p>Um parque repleto de trilhas por dentro de uma floresta sub-tropical a 18km de Londrina </p>
+            <h4 id="h4Parquegodoy">Parque mata dos Godoy</h4>
+            <p id="p08">Um parque repleto de trilhas por dentro de uma floresta sub-tropical a 18km de Londrina </p>
             <div class="linksEcoC" id="pmgLink">Saber mais</div>
           </div>
         </div>
         <div class="swiper-slide" id="ecoS4">
           <div class="ecoC" id="ecoC4">
             <img src="src/media/arturromas.png" alt="parque artur thomas">
-            <h4>Parque municipal Arthur Thomas</h4>
-            <p>Um parque urbano de 85 hectares que está localizado dentro da cidade </p>
+            <h4 id="h4ParqueMAT">Parque municipal Arthur Thomas</h4>
+            <p id="p09">Um parque urbano de 85 hectares que está localizado dentro da cidade </p>
             <div class="linksEcoC" id="patLink">Saber mais</div>
           </div>
         </div>
         <div class="swiper-slide" id="ecoS5">
           <div class="ecoC" id="ecoC5">
             <img src="src/media/tocajacare.jpg" id="ecoS5img" alt="">
-            <h4>Pesqueiro Toca do Jacaré</h4>
-            <p>A 13km de Londrina se encontra um famoso pesqueiro na modalidade pesque-page</p>
+            <h4 id="h4pesqueiro">Pesqueiro Toca do Jacaré</h4>
+            <p id="p10">A 13km de Londrina se encontra um famoso pesqueiro na modalidade pesque-page</p>
             <div class="linksEcoC" id="ptjLink">Saber mais</div>
           </div>
         </div>
@@ -217,7 +219,7 @@
   </div> -->
 <div class="divContent" id="familia">
   <div class="hr"></div>
-  <h1>Os melhores lugares para familia</h1>
+  <h1 id="h1familial">Os melhores lugares para familia</h1>
   <img src="https://iili.io/FsXa5iP.md.jpg" alt="FsXa5iP.md.jpg">
   <div class="swiperCtn">
     <div class="swiper swiper3"> <div class="swiper-wrapper">
@@ -229,7 +231,7 @@
       <div class="swiper-scrollbar"></div>
     </div>
     <h3> <span class="material-symbols-outlined">location_on</span>Lago Igapó</h3>
-    <p>Um local perfeito para passear tranquilamente e fazer piquenique</p>
+    <p id="p11">Um local perfeito para passear tranquilamente e fazer piquenique</p>
   </div>
     <div class="swiperCtn">
     <div class="swiper swiper3"> <div class="swiper-wrapper">
@@ -243,42 +245,42 @@
       <div class="swiper-scrollbar"></div>
     </div>
     <h3> <span class="material-symbols-outlined">location_on</span>Jardim Botânico</h3>
-    <p>Um local seguro e espaçoso repleto de natureza em volta</p>
+    <p id="p12">Um local seguro e espaçoso repleto de natureza em volta</p>
   </div>
 </div>
   <div class="divContent" id="historiaEmuseus">
     <div class="hr"></div>
-    <h1>Museus e cultura</h1>
-    <p>Explore a história de Londrina e mergulhe na cultura local</p>
+    <h1 id="h1museuscul">Museus e cultura</h1>
+    <p id="p13">Explore a história de Londrina e mergulhe na cultura local</p>
     <div class="museusLista">
-      <h3>Museu Histórico de Londrina</h3>
+      <h3 id="h3museusHL">Museu Histórico de Londrina</h3>
       <img src="https://live.staticflickr.com/2634/4164406362_c9193ac5a0_b.jpg" alt="museu histórico de Londrina">
-      <small>Foto do museu histórico</small>
+      <small id="smallFM">Foto do museu histórico</small>
       <article>
-        <p>
+        <p id="p14">
           O Museu Histórico de Londrina Padre Carlos Weiss foi inaugurado no dia 18 de setembro de 1970, na antiga Faculdade de Filosofia, Ciências e Letras de Londrina. <br> A partir de 1974, o museu é anexado à UEL como órgão suplementar, estando vinculado ao Centro de Letras e Ciências Humanas da universidade.
           Em 10 de dezembro de 1986 o museu passa a ocupar o prédio que outrora pertencia à segunda estação ferroviária de Londrina, cedido pela Prefeitura. <br> O edifício do hoje Museu Histórico apresenta linhas arquitetônicas caracteristicamente ecléticas.
         </p>
-        <small>Fonte: Wikipédia</small>
+        <small id="smallfW">Fonte: Wikipédia</small>
         <a href="https://maps.app.goo.gl/SjNmHdmjb6DTCw7j8" target="_blank">
           <p><span class="material-symbols-outlined">location_on</span> R. Benjamin Constant, 900 - Centro, Londrina - PR, 86010-350</p>
         </a>
       </article>
 
-      <h3>Museu da Arte de Londrina</h3>
+      <h3 id="h3maL">Museu da Arte de Londrina</h3>
       <img src="https://vault.pulsarimagens.com.br/file/thumb/04SR028.jpg" alt="museu da arte">
-      <small>Foto do Museu da Arte</small>
+      <small id="smallfma">Foto do Museu da Arte</small>
       <article>
-        <p>O Museu de Arte de Londrina é um museu brasileiro no município de Londrina, no Paraná. <br> Foi criado pelo decreto nº 172 em 12 de maio de 1993, data em que foi inaugurado. A exposição de inauguração exibiu a escultura A Eterna Primavera, de Auguste Rodin, e também obras dos artistas Menotti Del Pichia e Vitor Brecheret[1]. <br>
+        <p id="p15">O Museu de Arte de Londrina é um museu brasileiro no município de Londrina, no Paraná. <br> Foi criado pelo decreto nº 172 em 12 de maio de 1993, data em que foi inaugurado. A exposição de inauguração exibiu a escultura A Eterna Primavera, de Auguste Rodin, e também obras dos artistas Menotti Del Pichia e Vitor Brecheret[1]. <br>
           O prédio que abriga o museu fica na região central de Londrina, na rua Sergipe, e é tombado pelo Patrimônio Histórico e Artístico. Foi projetado em 1952 pelo arquiteto João Batista Vilanova Artigas e era usado como terminal rodoviário da cidade até 1988, quando o terminal mudou de lugar.</p>
-          <small>fonte: Wikipédia</small>
+          <small id="smallfW">fonte: Wikipédia</small>
           <a href="https://maps.app.goo.gl/SXoSXvZgTHc4eyxTA"><p><span class="material-symbols-outlined">location_on</span>R. Sergipe, 640 - Centro, Londrina - PR, 86010-380</p></a>
       </article>
     </div> 
   </div>
   <div class="divContent" id="feiras">
     <div class="hr"></div>
-    <h1>Conheça as feiras</h1>
+    <h1 id="h1cFeiras">Conheça as feiras</h1>
     <p id="pFeira1">Nada como se perder em um feira recheada de sensações e sabores</p>
     <img src="src/media/feira2.jpg" id="img1" alt="pessoas andando em uma feira">
     <p id="pFeira2">Acesse o link a baixo e descubra as melhores feiras em Londrina</p>
@@ -290,12 +292,12 @@
 </main>
 <footer> 
   <div id="logo">
-      <h2>O que fazer em Londrina?</h2>
+      <h2 id="oqfl">O que fazer em Londrina?</h2>
     </div>
     <div class="listFooter">
       <ul>
         <a href="#">
-          <li>Termos de uso</li>
+          <li id="termU">Termos de uso</li>
         </a>
         <a href="#">
           <li>Cookies</li>
@@ -304,7 +306,7 @@
     </div>
     <div class="oqfazeremLondrina">
       <p>©oquefazeremlondrina.com.br</p>
-      <p>Desenvolvido por <a href="#" id="linkport"><strong>Maicon Vieira</strong></a></p>
+      <p id="p16">Desenvolvido por <a href="#" id="linkport"><strong>Maicon Vieira</strong></a></p>
     </div>
 </footer>
 
