@@ -59,7 +59,9 @@ header{
     display: flex;
     flex-direction: column;
 }
-
+#backgroundPcHeader{
+    display: none;
+}
 
 .headerBarOn{
     display: flex;
@@ -84,6 +86,21 @@ header{
     color: rgb(39, 39, 39);
     font-family: "Barlow", sans-serif;
 }
+#logo2{
+    display: flex;
+    width: 31%;
+    margin: 6%;
+    color: rgb(39, 39, 39);
+    font-family: "Barlow", sans-serif;
+}
+#logopc{
+    display: flex;
+    width: 31%;
+    margin: 6%;
+    color: rgb(39, 39, 39);
+    font-family: "Barlow", sans-serif;
+    display: none;
+}
 #menuButton{
     margin: 10px;
     font-size: 27px;
@@ -93,14 +110,15 @@ header{
     width: 100vw;
     height: 100vh;
     display: none;
+    position: fixed;
 }
     .bgTr.bgTrOn{
         display: flex;
     }
 #translate{
     position: absolute;
-    right: 60px;
-    top: 40px;
+    right: 20%;
+    top: 29%;
     color: rgb(0, 0, 0);
     text-shadow: rgb(255, 255, 255) 4px 4px 10px;
     display: flex;
@@ -117,10 +135,12 @@ header{
         text-shadow: none;
         text-align: center;
         transition: all ease 0.5s;
+        display: none;
     }
         .translates.trOn{
             opacity: 10;
             transition: all ease 0.5s;
+            display: block;
         }
     .hr2{
         width: 80%; height: 1px; 
@@ -717,3 +737,114 @@ footer{
     .oqfazeremLondrina a{
         color: #f1f7ff;
     }
+
+@media(min-width: 1024px) {
+    .hb{
+        right: -1000px;
+        width: 20%;
+    }
+    .headerBarOn{
+        font-size: 20px;
+        z-index: 10;
+    }
+    header{
+        position: relative;
+        height: 112vh;
+    }
+
+    #backgroundPcHeader{
+    width: 100%;
+    height: 100%;
+    background-image:url(../src/media/Lago_Igapó_Londrina-Photoroom.png) ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    z-index: 6;
+    }
+
+@keyframes textDance {
+  0%   { transform: translate(-50%, -50%) translateY(0px); }
+  50%  { transform: translate(-50%, -50%) translateY(43px); }
+  100% { transform: translate(-50%, -50%) translateY(0px); }
+}
+
+    #logopc{
+        position: absolute;
+        left: 50%;
+        top: 29%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        display: flex;
+        width: 100%;
+        height: 25%;
+        align-items: center;
+        justify-content: center;
+        font-size: 121px;
+        z-index: 5;
+        animation: textDance 3.1s infinite;
+        font-family: "Bebas Neue", sans-serif;
+    }
+        #h2HeaderLogopc{
+        font-family: "Bebas Neue", sans-serif;
+        text-shadow: #00000070 1px 6px 7px; 
+        right: 10%;
+        cursor: pointer;
+        font-size: 121px;
+    }
+    #h2HeaderLogo{
+        display: none;
+    }
+    #translate{
+        right: 8%;
+        cursor: pointer;
+    }
+        #ptBr{
+            cursor: pointer;
+        }
+            #ptBr:hover{
+                color: #012c1b;
+                text-decoration: underline;
+            }
+        #en{
+            cursor: pointer;
+        }  
+            #en:hover{
+                color: #012c1b;
+                text-decoration: underline;
+            }
+        #es{
+            cursor: pointer;
+        }  
+            #es:hover{
+                color: #012c1b;
+                text-decoration: underline;
+            }
+    #menuButton{
+        cursor: pointer;
+    }
+    #descobrir{
+        z-index: 7;
+        bottom: 160px;
+        width: 25vw;
+        height: 8vh;
+        background-color: #007d4b;
+        color: white;
+        transition: all ease 1.5s;
+        cursor: pointer;
+    }
+        #descobrirButton{
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 160%;
+        }
+    #descobrir:hover{
+        width: 27vw;
+        height: 9vh;
+        bottom: 163px;
+        transition: all ease 1.5s;
+    }
+    .bgTr{
+        z-index: 7;
+        height: 100vh;
+    }
+
+}

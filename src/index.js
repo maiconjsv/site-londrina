@@ -40,8 +40,16 @@ document.getElementById('slide1Button').addEventListener('click', () =>{
     document.getElementById('eventos').scrollIntoView({behavior: "smooth"})
 })
 
-document.getElementById('slide2').addEventListener('click', () =>{
+document.getElementById('slide2Button').addEventListener('click', () =>{
     document.getElementById('ecoTurismo').scrollIntoView({behavior: "smooth"})
+})
+
+document.getElementById('slide4Button').addEventListener('click', ()=>{
+    document.getElementById('h1familial').scrollIntoView({behavior:"smooth"})
+})
+
+document.getElementById('slide5Button').addEventListener('click', ()=>{
+    document.getElementById('historiaEmuseus').scrollIntoView({behavior:"smooth"})
 })
 
 document.getElementById('slide6Button').addEventListener('click', () =>{
@@ -83,6 +91,7 @@ document.querySelector('#mapFeiras').addEventListener('click', () =>{
 //Tradução do index
 const idiomas = {
     br:{
+        logopc:"O que fazer em Londrina?",
         entrarEmContato:"Entrar em contato",
         contribuir: "Contribuir",
         sobreLondrina:"Sobre Londrina", 
@@ -140,6 +149,7 @@ const idiomas = {
         p16:"Desenvolvido por"
     },
     en:{
+        logopc:"What to do in Londrina?",
         entrarEmContato:"Contact us",
         contribuir: "Contribute",
         sobreLondrina:"About Londrina", 
@@ -197,6 +207,7 @@ const idiomas = {
         p16:"Developed by"
     },
     es:{
+        logopc:"¿Qué hacer en Londrina?",
         entrarEmContato:"Contactar",
         contribuir: "Contribuir",
         sobreLondrina:"Sobre Londrina", 
@@ -256,6 +267,7 @@ const idiomas = {
 }
 
 // Variáveis para a tradução
+const logopc = document.getElementById('h2HeaderLogopc')
 const entrarEmContato = document.getElementById('entrarEmContato');
 const contribuir = document.getElementById('contribuir');
 const sobreLondrina = document.getElementById('sobre-londrina');
@@ -323,6 +335,7 @@ const en = document.getElementById('en')
 const es = document.getElementById('es')
 
 en.addEventListener('click', () =>{
+    logopc.textContent = idiomas.en.logopc;
     entrarEmContato.textContent = idiomas.en.entrarEmContato;
     contribuir.textContent = idiomas.en.contribuir;
     sobreLondrina.textContent = idiomas.en.sobreLondrina;
@@ -384,6 +397,7 @@ en.addEventListener('click', () =>{
     p16.innerHTML = idiomas.en.p16;
 })
 es.addEventListener('click', () =>{
+    logopc.textContent = idiomas.es.logopc;
     entrarEmContato.textContent = idiomas.es.entrarEmContato;
     contribuir.textContent = idiomas.es.contribuir;
     sobreLondrina.textContent = idiomas.es.sobreLondrina;
@@ -446,6 +460,7 @@ es.addEventListener('click', () =>{
   
 })
 ptBr.addEventListener('click', () =>{
+    logopc.textContent = idiomas.br.logopc;
     entrarEmContato.textContent = idiomas.br.entrarEmContato;
     contribuir.textContent = idiomas.br.contribuir;
     sobreLondrina.textContent = idiomas.br.sobreLondrina;
