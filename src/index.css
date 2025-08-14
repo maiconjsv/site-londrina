@@ -895,25 +895,52 @@ footer{
             top: 8%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             border-radius: 10px;
             color: white;
+            padding: 10px;
         }
+            .coverPic h1{
+                position: absolute;
+                top: 10%;
+                left: 7%;
+            }   
+            .coverPic p{
+                position: absolute;
+                top: 23%;
+                left: 6%;
+                margin-right: 5%;
+            }
+            .desktopButton{
+                background-color: white;
+                color: #012c1b;
+                width: 26%;
+                height: 16%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+                align-self: center;
+                margin-bottom: 5px;
+                position: absolute;
+                bottom: 10%;
+                cursor: pointer;
+            }
             #coverPic1{
-
+             display: flex;   
             }
             #coverPic2{
                 left: 10%;
             }
             #coverPic3{
-
+                display: flex;
             }
             #coverPic4{
                 left: 10%;
             }
             #coverPic5{
-
+                display: flex;
             }
         #linkD1{
             flex-direction: row;
@@ -930,5 +957,78 @@ footer{
         #linkD5{
             flex-direction: row;
         }
+        
+    #eventos{
+        flex-direction: column;
+        height: 100%;
+    }
+    #expoLondrina{
+        display: flex;
+        flex-direction: column;
+    }
+    #expoTexts{
+        /*background-color: rgba(17, 105, 17, 0.788);*/
+        background-color: #007d4b;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+    #infosExpoMain{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-self: flex-start;
+        margin-top: 4%;
+    }
+        #infosExpoMain h2{
+            font-size: 50px;
+            margin-left: 15px;
+            align-self: flex-start;
+        }
+        #infosExpoMain p{
+            margin-left: 18px;
+        }
+        #expoTexts img{
+            width: 40%;
+            margin-top: 10px;
+        }
+    #iconsExpo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 70%;
+        gap: 15px;
+        margin: 20px 0px 20px 0px;
+        align-items: center;
+        height: 100%;
+    }
+    .iconEx{
+        background-color: #015c37;
+        
+        width: 90%;
+        height: 15%;
+        text-align: center;
+        border-radius: 0;
+        border: solid white 0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
     
+        #expoLondrina iframe{
+            width: 70%;
+            height: 500px;
+            align-self: center;
+            margin: 10px 0px 0px 10px;
+        }
+    #expoText2{
+        align-items: center;
+        padding: 100px 0px 100px 0px;
+        width: 70%;
+        align-self: center;
+    }
 }

@@ -158,7 +158,19 @@ const idiomas = {
         mapFeiras:"Mapa de feiras",
         oqfl:"O que fazer em Londrina?",
         termU:"Termos de uso",
-        p16:"Desenvolvido por"
+        p16:'Desenvolvido por <a href="https://maiconjsv.github.io/portfolio/" target="_blank" id="linkport"><strong>Maicon Vieira</strong></a>',
+        h1CoverPicEventos:"Eventos",
+        h1CoverPicEcoturismo:"Ecoturismo",
+        h1CoverPicFamilia:"Familia",
+        h1CoverPicMuseus:"Museus e Cultura",
+        h1CoverPicFeiras:"Feiras",
+        pCoverPicEventos:"Os eventos em Londrina são uma mistura vibrante de cultura, inovação e diversão, descubra você mesmo o que te espera!",
+        pCoverPicEcoturismo:"No ecoturismo na região de Londrina, cada trilha ou lago guarda um cenário surpreendente,venha descobrir o que está escondido na natureza.",
+        pCoverPicFamilia:"Londrina tem cantinhos perfeitos para todas as idades, e alguns vão te surpreender.",
+        pCoverPicMuseus:"Entre história, arte e curiosidades, Londrina guarda experiências culturais que você não imagina.",
+        pCoverPicFeira:"Nas feiras de Londrina, cada barraca é um convite a novos sabores, cores e histórias.",
+        desktopButton:"Descobrir",
+        descobrirButtonDesktop:"Descobrir",
     },
     en:{
         logopc:"What to do in Londrina?",
@@ -167,7 +179,7 @@ const idiomas = {
         sobreLondrina:"About Londrina", 
         h2HeaderLogo:"What to do in Londrina?",
         descobrirButton:"Discover",
-        h1EventosHeader:"Events",
+        h1EventosHeader:"Events",   
         slideButton:"Discover",
         h1EcoturismoHeader:"Ecotourism",
         h1PraFamiliaHeader:"For the family",
@@ -216,7 +228,19 @@ const idiomas = {
         mapFeiras:"Map of fairs",
         oqfl:"What to do in Londrina?",
         termU:"Terms of use",
-        p16:"Developed by"
+        p16:'Developed by <a href="https://maiconjsv.github.io/portfolio/" target="_blank" id="linkport"><strong>Maicon Vieira</strong></a>',
+        h1CoverPicEventos: "Events",
+        h1CoverPicEcoturismo: "Ecotourism",
+        h1CoverPicFamilia: "Family",
+        h1CoverPicMuseus: "Museums and Culture",
+        h1CoverPicFeiras: "Fairs",
+        pCoverPicEventos: "Events in Londrina are a vibrant mix of culture, innovation, and fun, discover it for yourself!",
+        pCoverPicEcoturismo: "In ecotourism around Londrina, every trail or lake hides a surprising scene, come discover what nature has in store.",
+        pCoverPicFamilia: "Londrina has perfect spots for all ages, and some will surprise you.",
+        pCoverPicMuseus: "Between history, art, and curiosities, Londrina holds cultural experiences you wouldn't imagine.",
+        pCoverPicFeira: "At Londrina's fairs, every stall is an invitation to new flavors, colors, and stories.",
+        desktopButton:"Discover",
+        descobrirButtonDesktop:"Discover",
     },
     es:{
         logopc:"¿Qué hacer en Londrina?",
@@ -274,11 +298,36 @@ const idiomas = {
         mapFeiras:"Mapa de ferias",
         oqfl:"¿Qué hacer en Londrina?",
         termU:"Términos de uso",
-        p16:"Desarrollado por"
+        p16:'Desarrollado por <a href="https://maiconjsv.github.io/portfolio/" target="_blank" id="linkport"><strong>Maicon Vieira</strong></a>',
+        h1CoverPicEventos: "Eventos",
+        h1CoverPicEcoturismo: "Ecoturismo",
+        h1CoverPicFamilia: "Familia",
+        h1CoverPicMuseus: "Museos y Cultura",
+        h1CoverPicFeiras: "Ferias",
+        pCoverPicEventos: "Los eventos en Londrina son una mezcla vibrante de cultura, innovación y diversión; ¡descúbrelo tú mismo!",
+        pCoverPicEcoturismo: "En el ecoturismo en la región de Londrina, cada sendero o lago guarda un escenario sorprendente, ven a descubrir lo que se esconde en la naturaleza.",
+        pCoverPicFamilia: "Londrina tiene rincones perfectos para todas las edades, y algunos te sorprenderán.",
+        pCoverPicMuseus: "Entre historia, arte y curiosidades, Londrina guarda experiencias culturales que no te imaginas.",
+        pCoverPicFeira: "En las ferias de Londrina, cada puesto es una invitación a nuevos sabores, colores e historias.",
+        desktopButton:"Descubrir",
+        descobrirButtonDesktop:"Descubrir",
     }
 }
 
 // Variáveis para a tradução
+const h1CoverPicEventos = document.getElementById('h1CoverPicEventos')
+const h1CoverPicEcoturismo  = document.getElementById('h1CoverPicEcoturismo')
+const h1CoverPicFamilia = document.getElementById("h1CoverPicFamilia")
+const h1CoverPicMuseus = document.getElementById('h1CoverPicMuseus')
+const h1CoverPicFeiras = document.getElementById('h1CoverPicFeiras')
+const pCoverPicEventos  = document.getElementById('pCoverPicEventos')
+const pCoverPicEcoturismo = document.getElementById('pCoverPicEcoturismo')
+const pCoverPicFamilia = document.getElementById("pCoverPicFamilia")
+const pCoverPicMuseus = document.getElementById("pCoverPicMuseus")
+const pCoverPicFeira = document.getElementById("pCoverPicFeira")
+const desktopButton = document.querySelectorAll('.desktopButton')
+const descobrirButtonDesktop = document.getElementById('descobrirButtonDesktop')
+
 const logopc = document.getElementById('h2HeaderLogopc')
 const entrarEmContato = document.getElementById('entrarEmContato');
 const contribuir = document.getElementById('contribuir');
@@ -407,6 +456,18 @@ en.addEventListener('click', () =>{
     oqfl.textContent = idiomas.en.oqfl;
     termU.textContent = idiomas.en.termU;
     p16.innerHTML = idiomas.en.p16;
+    h1CoverPicEventos.textContent = idiomas.en.h1CoverPicEventos
+    h1CoverPicEcoturismo.textContent  = idiomas.en.h1CoverPicEcoturismo
+    h1CoverPicFamilia.textContent = idiomas.en.h1CoverPicFamilia 
+    h1CoverPicMuseus.textContent = idiomas.en.h1CoverPicMuseus 
+    h1CoverPicFeiras.textContent = idiomas.en.h1CoverPicFeiras 
+    pCoverPicEventos.textContent  = idiomas.en.pCoverPicEventos
+    pCoverPicEcoturismo.textContent = idiomas.en.pCoverPicEcoturismo 
+    pCoverPicFamilia.textContent = idiomas.en.pCoverPicFamilia
+    pCoverPicMuseus.textContent = idiomas.en.pCoverPicMuseus
+    pCoverPicFeira.textContent = idiomas.en.pCoverPicFeira
+    desktopButton.forEach(btn =>{btn.textContent = idiomas.en.desktopButton})
+    descobrirButtonDesktop.textContent = idiomas.en.descobrirButtonDesktop
 })
 es.addEventListener('click', () =>{
     logopc.textContent = idiomas.es.logopc;
@@ -469,6 +530,18 @@ es.addEventListener('click', () =>{
     oqfl.textContent = idiomas.es.oqfl;
     termU.textContent = idiomas.es.termU;
     p16.innerHTML = idiomas.es.p16;
+    h1CoverPicEventos.textContent = idiomas.es.h1CoverPicEventos
+    h1CoverPicEcoturismo.textContent  = idiomas.es.h1CoverPicEcoturismo
+    h1CoverPicFamilia.textContent = idiomas.es.h1CoverPicFamilia 
+    h1CoverPicMuseus.textContent = idiomas.es.h1CoverPicMuseus 
+    h1CoverPicFeiras.textContent = idiomas.es.h1CoverPicFeiras 
+    pCoverPicEventos.textContent  = idiomas.es.pCoverPicEventos
+    pCoverPicEcoturismo.textContent = idiomas.es.pCoverPicEcoturismo 
+    pCoverPicFamilia.textContent = idiomas.es.pCoverPicFamilia
+    pCoverPicMuseus.textContent = idiomas.es.pCoverPicMuseus
+    pCoverPicFeira.textContent = idiomas.es.pCoverPicFeira
+    desktopButton.forEach(btn => {btn.textContent = idiomas.es.desktopButton})
+    descobrirButtonDesktop.textContent = idiomas.es.descobrirButtonDesktop
   
 })
 ptBr.addEventListener('click', () =>{
@@ -532,5 +605,17 @@ ptBr.addEventListener('click', () =>{
     oqfl.textContent = idiomas.br.oqfl;
     termU.textContent = idiomas.br.termU;
     p16.innerHTML = idiomas.br.p16;
-  
+    h1CoverPicEventos.textContent = idiomas.br.h1CoverPicEventos
+    h1CoverPicEcoturismo.textContent  = idiomas.br.h1CoverPicEcoturismo
+    h1CoverPicFamilia.textContent = idiomas.br.h1CoverPicFamilia 
+    h1CoverPicMuseus.textContent = idiomas.br.h1CoverPicMuseus 
+    h1CoverPicFeiras.textContent = idiomas.br.h1CoverPicFeiras 
+    pCoverPicEventos.textContent  = idiomas.br.pCoverPicEventos
+    pCoverPicEcoturismo.textContent = idiomas.br.pCoverPicEcoturismo 
+    pCoverPicFamilia.textContent = idiomas.br.pCoverPicFamilia
+    pCoverPicMuseus.textContent = idiomas.br.pCoverPicMuseus
+    pCoverPicFeira.textContent = idiomas.br.pCoverPicFeira
+    desktopButton.forEach(btn => { btn.textContent = idiomas.br.descobrirButton})
+    descobrirButtonDesktop.textContent = idiomas.br.descobrirButtonDesktop
+
 })
