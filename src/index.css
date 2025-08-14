@@ -162,6 +162,9 @@ header{
     color: rgb(39, 39, 39);
 }
 
+#descobrirDesktop{
+    display: none;
+}
 
 .swiper {
   width: 100%;
@@ -738,6 +741,13 @@ footer{
         color: #f1f7ff;
     }
 
+#swiperDesktop{
+    display: none;
+    width: 100%;
+    
+    
+}
+
 @media(min-width: 1024px) {
     .hb{
         right: -1000px;
@@ -823,20 +833,29 @@ footer{
         cursor: pointer;
     }
     #descobrir{
-        z-index: 7;
+        display: none;
+    }
+    #descobrirDesktop{
+        position: absolute;
         bottom: 160px;
+        align-self: center;
         width: 25vw;
         height: 8vh;
         background-color: #007d4b;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: white;
+        z-index: 7;
         transition: all ease 1.5s;
         cursor: pointer;
     }
-        #descobrirButton{
+        #descobrirButtonDesktop{
             font-family: "Bebas Neue", sans-serif;
             font-size: 160%;
         }
-    #descobrir:hover{
+    #descobrirDesktop:hover{
         width: 27vw;
         height: 9vh;
         bottom: 163px;
@@ -847,4 +866,69 @@ footer{
         height: 100vh;
     }
 
+    #swiperMain{
+        display: none;
+    }
+
+    #swiperDesktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+    .linksDesktop{
+        width: 100%;
+        background-color: white;
+        height: 100%;
+        position: relative;
+        display: flex;
+    }
+        .linksDesktop img{
+            width: 60%;
+        }
+        .coverPic{
+            width: 40%;
+            height: 45%;
+            background-color: #007d4b;
+            position: absolute;
+            left: 45%;
+            top: 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            color: white;
+        }
+            #coverPic1{
+
+            }
+            #coverPic2{
+                left: 10%;
+            }
+            #coverPic3{
+
+            }
+            #coverPic4{
+                left: 10%;
+            }
+            #coverPic5{
+
+            }
+        #linkD1{
+            flex-direction: row;
+        }
+        #linkD2{
+            flex-direction: row-reverse;
+        }
+        #linkD3{
+            flex-direction: row;
+        }
+        #linkD4{
+            flex-direction: row-reverse;
+        }
+        #linkD5{
+            flex-direction: row;
+        }
+    
 }

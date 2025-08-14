@@ -31,9 +31,14 @@ const closeBar = document.getElementById('closeBar')
 
 //Links internos
 const discovery = document.querySelector('#descobrirButton')
+const swiperDesktop = document.getElementById('swiperDesktop')
+const discoveryDesktop = document.querySelector('#descobrirDesktop')
 const coisasPraFazer1 = document.querySelector('.swiper')
     discovery.addEventListener('click', () =>{
         coisasPraFazer1.scrollIntoView({behavior: "smooth"})
+    })
+    discoveryDesktop.addEventListener('click', () =>{
+        swiperDesktop.scrollIntoView({behavior:"smooth"})
     })
     //links do carrocel principal
 document.getElementById('slide1Button').addEventListener('click', () =>{
@@ -87,6 +92,13 @@ document.querySelector('#img2').addEventListener('click', () =>{
 document.querySelector('#mapFeiras').addEventListener('click', () =>{
     window.open("https://feiraslondrina.com.br/fair", "_blank")
 })
+
+
+//Função para a seção do swiper, mas para pc
+
+
+
+
 
 //Tradução do index
 const idiomas = {
