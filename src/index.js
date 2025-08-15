@@ -60,8 +60,22 @@ document.getElementById('slide5Button').addEventListener('click', ()=>{
 document.getElementById('slide6Button').addEventListener('click', () =>{
     document.getElementById('feiras').scrollIntoView({behavior: "smooth"})
 })
-
-
+//Links internos desktop
+document.getElementById('desktop1Button').addEventListener('click', () =>{
+    document.getElementById('eventos').scrollIntoView({behavior:"smooth"})
+})
+document.getElementById('desktop2Button').addEventListener('click', () =>{
+    document.getElementById('ecoTurismo').scrollIntoView({behavior:"smooth"})
+})
+document.getElementById('desktop3Button').addEventListener('click', () =>{
+    document.getElementById('familia').scrollIntoView({behavior:"smooth"})
+})
+document.getElementById('desktop4Button').addEventListener('click', () =>{
+    document.getElementById('historiaEmuseus').scrollIntoView({behavior:"smooth"})
+})
+document.getElementById('desktop5Button').addEventListener('click', () =>{
+    document.getElementById('feiras').scrollIntoView({behavior:"smooth"})
+})
 
 //lógica eventos
 document.getElementById('saberMaisExpo').addEventListener('click', () =>{
@@ -171,6 +185,7 @@ const idiomas = {
         pCoverPicFeira:"Nas feiras de Londrina, cada barraca é um convite a novos sabores, cores e histórias.",
         desktopButton:"Descobrir",
         descobrirButtonDesktop:"Descobrir",
+        p0200:"O evento acontece a 6 décadas e é um espaço aberto para o público de todas as idades, contendo desde shows sertanejos marcantes até exposição de animais, tecnologia agricola, praça de alimentação com todo tipo de comida e oportunidade de negócios.",
     },
     en:{
         logopc:"What to do in Londrina?",
@@ -241,6 +256,7 @@ const idiomas = {
         pCoverPicFeira: "At Londrina's fairs, every stall is an invitation to new flavors, colors, and stories.",
         desktopButton:"Discover",
         descobrirButtonDesktop:"Discover",
+        p0200:"The event has been running for 6 decades and is an open space for people of all ages, featuring everything from popular country music shows to animal exhibitions, agricultural technology, a food court with all kinds of food, and business opportunities.",
     },
     es:{
         logopc:"¿Qué hacer en Londrina?",
@@ -311,6 +327,7 @@ const idiomas = {
         pCoverPicFeira: "En las ferias de Londrina, cada puesto es una invitación a nuevos sabores, colores e historias.",
         desktopButton:"Descubrir",
         descobrirButtonDesktop:"Descubrir",
+        p0200:"El evento se celebra desde hace 6 décadas y es un espacio abierto para público de todas las edades, que incluye desde espectáculos de música country notables hasta exposiciones de animales, tecnología agrícola, un patio de comidas con todo tipo de alimentos y oportunidades de negocio.",
     }
 }
 
@@ -327,6 +344,7 @@ const pCoverPicMuseus = document.getElementById("pCoverPicMuseus")
 const pCoverPicFeira = document.getElementById("pCoverPicFeira")
 const desktopButton = document.querySelectorAll('.desktopButton')
 const descobrirButtonDesktop = document.getElementById('descobrirButtonDesktop')
+const p0200 = document.getElementById('p02.0')
 
 const logopc = document.getElementById('h2HeaderLogopc')
 const entrarEmContato = document.getElementById('entrarEmContato');
@@ -468,6 +486,7 @@ en.addEventListener('click', () =>{
     pCoverPicFeira.textContent = idiomas.en.pCoverPicFeira
     desktopButton.forEach(btn =>{btn.textContent = idiomas.en.desktopButton})
     descobrirButtonDesktop.textContent = idiomas.en.descobrirButtonDesktop
+    p0200.textContent = idiomas.en.p0200
 })
 es.addEventListener('click', () =>{
     logopc.textContent = idiomas.es.logopc;
@@ -542,6 +561,7 @@ es.addEventListener('click', () =>{
     pCoverPicFeira.textContent = idiomas.es.pCoverPicFeira
     desktopButton.forEach(btn => {btn.textContent = idiomas.es.desktopButton})
     descobrirButtonDesktop.textContent = idiomas.es.descobrirButtonDesktop
+    p0200.textContent = idiomas.es.p0200
   
 })
 ptBr.addEventListener('click', () =>{
@@ -617,5 +637,5 @@ ptBr.addEventListener('click', () =>{
     pCoverPicFeira.textContent = idiomas.br.pCoverPicFeira
     desktopButton.forEach(btn => { btn.textContent = idiomas.br.descobrirButton})
     descobrirButtonDesktop.textContent = idiomas.br.descobrirButtonDesktop
-
+    p0200.textContent = idiomas.br.p0200
 })

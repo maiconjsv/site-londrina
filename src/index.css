@@ -111,6 +111,7 @@ header{
     height: 100vh;
     display: none;
     position: fixed;
+    z-index: 8;
 }
     .bgTr.bgTrOn{
         display: flex;
@@ -634,6 +635,15 @@ margin-top: 46px;
         margin: 10px 0px 10px 0px;
     }
 
+    #swiperCtnContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+
 .swiper3{
     width: 100%;
     height: 260px;
@@ -756,6 +766,7 @@ footer{
     .headerBarOn{
         font-size: 20px;
         z-index: 10;
+        transition: all ease 0.4s;
     }
     header{
         position: relative;
@@ -1027,8 +1038,187 @@ footer{
         }
     #expoText2{
         align-items: center;
-        padding: 100px 0px 100px 0px;
+        padding: 50px 0px 100px 0px;
         width: 70%;
         align-self: center;
     }
+    #p02{
+        display: none;
+    }
+    .hr{
+        width: 50%;
+    }
+    #visiteLodrinaLinkImg{
+        width: 15%;
+    }
+
+    #ecoTurismo{
+        margin: 10px 0px 0px 0px;
+    }
+    #ecoturismoIntro{
+        flex-direction: row-reverse;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+        #ecoturismoIntro img{
+            width: 20%;
+            left: 0;
+            margin-left: 3%;
+        }
+    #ecoTIDiv{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .swiper2{
+        width: 95%;
+        height: 100%;
+    }
+   
+    .ecoC img{
+        width: 70%;
+    }
+    #ecoS5img{
+                width: 60%;
+            }
+    #ecoS4 img{
+        width: 80%;
+    }        
+    .linksEcoC{
+        height: 40%;
+    }
+    
+       #ecoTurismo .swiper-button-prev{
+        top: 5%;
+        left: 93%;
+        background-color: #015c37;
+    }
+        #ecoTurismo .swiper-button-prev::after{
+            font-size: 20px;
+            text-shadow: none;
+        }
+    #ecoTurismo .swiper-button-next{
+        top: 5%;
+        left: 96%;
+        background-color: #015c37;
+    }
+        #ecoTurismo .swiper-button-next::after{
+            font-size: 20px;
+            text-shadow: none;
+        }
+
+    #introFamilia{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #introFamilia img{
+        width: 28%;
+
+    }
+    #introFamilia h1{
+        margin: 0% 10% 0% 0%;
+    }
+
+    #swiperCtnContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .swiper3{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        
+    }
+    .swiperCtn{
+        width: 40%;
+    }
+    .swiperCtn .swiper-slide{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+    .swiperCtn h3{
+        align-items: center;
+        display: flex;
+        color: #012c1b;
+    }    
+    #historiaEmuseus{
+        width: 90%;
+        align-items: flex-start;
+    }
+        #historiaEmuseus h1{
+            font-size: 52px;
+        }
+        #historiaEmuseus .hr{
+            align-self: center;
+            margin-bottom: 30px;
+        }
+    .museusLista{
+        margin-top: 20px;
+        width: 70%;
+        align-self: center;
+        border: solid black 1px;
+        border-radius: 4%;
+        padding: 20px;
+    }
+    .museusLista img{
+        width: 30%;
+    }
+
+    #feirasapre{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+    }
+        #feirasapre h1{
+            font-size: 40px;
+        }
+    #feirasapre img{
+        width: 50%;
+    }
+    #img2{
+        width: 20%;
+        cursor: pointer;
+    }
+    #mapfes{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #mapFeiras{
+        align-self: center;
+        width: 30%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer{
+        padding-bottom: 10px;
+    }
+
+    #logo2{
+        width: 30%;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
 }
