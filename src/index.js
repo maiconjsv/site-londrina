@@ -77,6 +77,13 @@ document.getElementById('desktop5Button').addEventListener('click', () =>{
     document.getElementById('feiras').scrollIntoView({behavior:"smooth"})
 })
 
+document.getElementById('contribuir').addEventListener('click', () =>{
+    window.open("contribua.html")
+})
+
+
+
+
 //lógica eventos
 document.getElementById('saberMaisExpo').addEventListener('click', () =>{
     window.open("https://expolondrina.com.br/", "_blank")

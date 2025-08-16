@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribuir com o site</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #007d4b;
+        }
+        #headerForm{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 19px 0px 23px 0px;
+            color: white;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        #typeC{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+
+        }
+            #meuEmail{
+                width: 80%;
+                margin-bottom: 10px;
+            }
+            #sugest{
+                width:80% ;
+                height: 500px;
+                border-radius: 5px;
+            }
+            #enviar{
+                margin: 30px 0px 30px 0px;
+                width: 30%;
+                height: 30px;
+            }
+            #voltar{
+                text-decoration: underline;
+                color: white;
+            }
+        @media(min-width:1024px){
+            main{
+                width: 100%;
+                height: 100%;
+            }
+            .form{
+                flex-direction: row;
+            }
+            #headerForm{
+                width: 20%;
+                align-items: flex-start;
+                justify-content: center;
+                height: 95%;
+                margin: 0;
+                
+            }
+                #headerForm h1, p{
+                    margin: 0 0 0 5%;
+                }
+            #typeC{
+                height: 80%;
+            }
+            #meuEmail{
+                width: 40%;
+                height: 10%;
+            }
+            #sugest{
+                width: 60%;
+                
+                font-size: 20px;
+            }   
+            #enviar{
+                margin: 5px 0 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="form">
+            <div id="headerForm"> 
+                <h1>Contribuir</h1>
+                <p>Comente aqui sugestões, links e informações.</p>
+            </div>
+            <div id="typeC">
+                <input type="email" placeholder="Digite seu Email"  id="meuEmail">
+                <TEXTarea id="sugest" placeholder="Digite Aqui"></TEXTarea>
+                <button id="enviar">Enviar</button>
+                <a href="index.html">
+                    <div id="voltar">Voltar</div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="src/firebase.js" type="module"></script>
+</body>
+</html>

@@ -843,6 +843,18 @@ footer{
     #menuButton{
         cursor: pointer;
     }
+    #closeBar{
+        cursor: pointer;
+    }
+    #contribuir{
+        cursor: pointer;
+        transition: all ease 1.5s;
+    }
+        #contribuir:hover{
+            text-decoration: underline;
+            transition: all ease 1.5s;
+        }
+
     #descobrir{
         display: none;
     }
