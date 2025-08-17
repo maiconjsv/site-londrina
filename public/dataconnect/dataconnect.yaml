@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "site-londrina"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "site-londrina-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
